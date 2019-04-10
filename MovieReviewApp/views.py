@@ -212,7 +212,7 @@ def graph_view(request):
         'tmdb_review' : tmdb_preprocessed,
         'tmdb_rating': tmdb_sentiment,
         'trained_model_rating': new_model_sentiment,
-        'imdb' : float(ratelist[0])
+        'imdb' : float(ratelist[0][0:2])
     }
 
     temp['movie'].append(pydict)
